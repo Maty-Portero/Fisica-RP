@@ -121,8 +121,15 @@ header .textos-header{
 
 .respuestas{
     position: relative;
-    font-size: 1.5em;
     top: 50px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: greenyellow;
+    border: 5px solid greenyellow;
+    margin-top: 8px;
+    left: 835px;
 }
 
 footer{
