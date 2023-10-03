@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web AlexCG</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Matemática General</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Operaciones Básicas</h2>
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <form action="" method="">
+
+                        Numero 1: <input type="text" id="n1">
+                        <br>
+                        Numero 2: <input type="text" id="n2">
+                        <br>
+                        Resultado: <input type="text" id="res">
+                        <br><br>
+                        <input type="button" id="boton" value="Sumar" onclick="calculo(1);">
+                        <input type="button" id="boton" value="Restar" onclick="calculo(2);">
+                        <input type="button" id="boton" value="Multiplicar" onclick="calculo(3);">
+                        <input type="button" id="boton" value="Dividir" onclick="calculo(4);">
+                    </form>
+                
+                    <script>
+                
+                        function calculo(op){
+                            var num1 = parseInt(document.getElementById("n1").value);
+                            var num2 = parseInt(document.getElementById("n2").value);
+                            switch(op){
+                                case 1:
+                                    var resultado = num1 + num2;
+                                    break;
+                                
+                                case 2:
+                                    var resultado = num1 - num2;
+                                    break;
+                
+                                case 3:
+                                    var resultado = num1 * num2;
+                                    break;
+                
+                                case 4:
+                                    var resultado = num1 / num2;
+                                    break;
+                            }
+                            var elemento = document.getElementById("res");
+                            elemento.value = resultado;
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Operaciones Adicionales</h2>
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos">
+                    <form action="" method="">
+
+                        Numero 1: <input type="text" id="n3">
+                        <br>
+                        Número al que se eleva: <input type="text" id="e1">
+                        <br>
+                        Resultado: <input type="text" id="res1">
+                        <br><br>
+                        <input type="button" id="boton" value="Raiz Cuadrada" onclick="calculo1(1);">
+                        <input type="button" id="boton" value="Potencia" onclick="calculo1(2);">
+                    </form>
+
+                    <script>
+                
+                        function calculo1(op){
+                            var num1 = parseInt(document.getElementById("n3").value);
+                            var ele1 = parseInt(document.getElementById("e1").value);
+                            switch(op){
+                                case 1:
+                                    var resultado1 = Math.sqrt(num1);
+                                    break;
+                                
+                                case 2:
+                                    var resultado1 = Math.pow(num1, ele1);
+                                    break;
+
+                            }
+                            var elemento1 = document.getElementById("res1");
+                            elemento1.value = resultado1;
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>8296312</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; AlexCG Design | Jordan Alexander</h2>
+    </footer>
+</body>
+
+</html>
