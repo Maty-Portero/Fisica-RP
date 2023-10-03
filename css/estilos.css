@@ -82,6 +82,46 @@ header .textos-header{
     width: 100%;
 }
 
+.valor{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: greenyellow;
+    border: 5px solid greenyellow;
+    left: 160px;
+    margin-top: 8px;
+}
+
+.botones{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    color: greenyellow;
+    background-color: black;
+    border: 5px solid greenyellow;
+    margin-left: 5px;
+}
+
+.botones:hover{
+    color: black;
+    background-color: greenyellow;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.ob{
+    position: relative;
+    left: 20px;
+}
+
+.oa{
+    position: relative;
+    left: 125px;
+}
+
 /* About us */
 
 main .sobre-nosotros{
