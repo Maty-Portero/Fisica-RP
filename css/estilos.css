@@ -234,6 +234,11 @@ main .sobre-nosotros{
     text-align: justify;
 }
 
+.bibliografia{
+    text-decoration: none;
+    color: black;
+}
+
 /* footer */
 
 footer{
