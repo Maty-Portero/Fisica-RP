@@ -14,10 +14,10 @@
 <body>
     <header>
         <nav>
-            <a href="#">Cálculos de Superficie y Volúmenes</a>
+            <a href="#">Inicio</a>
         </nav>
         <section class="textos-header">
-            <h1>La Fisica</h1>
+            <h1>Cálculos de Superficie y Volúmen</h1>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -27,15 +27,38 @@
     </header>
     <main>
         <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">La Física como Ciencia</h2>
+            <h2 class="titulo">Cálculo de Superficie y Volúmen</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/img.jpg" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3>La Física es la ciencia natural que estudia la naturaleza de los componentes y fenómenos más fundamentales del Universo como lo son la energía, la materia, la fuerza, el movimiento, el espacio-tiempo, las magnitudes físicas, las propiedades físicas y las interacciones fundamentales.
-                    <br><br>    
-                    El alcance de la física es extraordinariamente amplio y puede incluir estudios tan diversos como la mecánica cuántica, la física teórica o la óptica.
-                    </h3>
-                </div>
+                <form action=""   method=""    >
+
+                    Longitud (X) :<input type="text" id="n1" ><br>
+                    Altura (Y) :<input type="text" id="n2" ><br>
+                    Anchura (Z) :<input type="text" id="n3" ><br>
+                    <input type="button" value="Superficie"  onclick="calculos(1);">
+                    <input type="button" value="Volumen"  onclick="calculos(2);">
+                    Resultado :<input type="text" id="res" ><br>
+                    		
+            
+                </form>
+                <script>
+            function calculos(operacion){
+			var num1 = parseInt(document.getElementById("n1").value);
+			var num2 = parseInt(document.getElementById("n2").value);
+            var num3 = parseInt(document.getElementById("n3").value);
+            
+			switch(operacion){
+				case 1:
+                    var resultado = num1 * num2;
+                break;
+
+				case 2:
+				    var resultado = num1 * num3 * num2;
+				break;
+			}
+            var elemento = document.getElementById("res");
+            elemento.value = resultado;
+        }
+                </script>
             </div>
         </section>
         <section class="portafolio">
@@ -124,19 +147,19 @@
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
-                <h4>Miembros:</h4>
-                <p>Axel Matanza <br>Fabrizio Amado <br> Maximo Goitia <br> Matias Portero<br> Lautaro Rodriguez </p>
+                <h4>Phone</h4>
+                <p>8296312</p>
             </div>
             <div class="content-foo">
-                <h4>Docente:</h4>
-                <p>Claudio Chapela</p>
+                <h4>Email</h4>
+                <p>8296312</p>
             </div>
             <div class="content-foo">
-                <h4>Fecha de entrega</h4>
-                <p>20/10</p>
+                <h4>Location</h4>
+                <p>8296312</p>
             </div>
         </div>
-        <h2 class="titulo-final">&copy; RadioPairis.inc | Fisica</h2>
+        <h2 class="titulo-final">&copy; AlexCG Design | Jordan Alexander</h2>
     </footer>
 </body>
 
