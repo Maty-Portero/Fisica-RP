@@ -1,0 +1,55 @@
+.titulo{
+    width: 99.2%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    border: 5px solid black;
+}
+
+.operaciones{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: greenyellow;
+    border: 5px solid greenyellow;
+    margin-left: 5px;
+    top: -100px;
+    left: 100px;
+}
+
+.botones{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    color: greenyellow;
+    background-color: black;
+    border: 5px solid greenyellow;
+    left: -260px;
+}
+
+.botones:hover{
+    color: black;
+    background-color: greenyellow;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+.contenedor-res{
+    text-align: center;
+}
+
+.respuestas{
+    font-size: 1.5em;
+}
